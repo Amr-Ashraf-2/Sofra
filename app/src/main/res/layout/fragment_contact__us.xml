@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".ui.fragments.client.general.Contact_Us_Fragment">
+
+    <LinearLayout
+        android:id="@+id/Lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/contact_us"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/Contact_Us_Fragment_Et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_us_et_name"
+            android:inputType="textPersonName"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            android:background="@drawable/layer_display_restaurants_bg"
+            android:layout_marginTop="@dimen/_8sdp"
+            style="@style/general_et_home"/>
+
+        <EditText
+            android:id="@+id/Contact_Us_Fragment_Et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textSize="@dimen/_15ssp"
+            android:inputType="textEmailAddress"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:background="@drawable/layer_display_restaurants_bg"
+            android:layout_marginTop="@dimen/_8sdp"
+            style="@style/general_et_home"/>
+
+        <EditText
+            android:id="@+id/Contact_Us_Fragment_Et_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/_15ssp"
+            tools:ignore="TextFields"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:background="@drawable/layer_display_restaurants_bg"
+            android:layout_marginTop="@dimen/_8sdp"
+            style="@style/general_et_home"/>
+
+        <EditText
+            android:id="@+id/Contact_Us_Fragment_Et_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_message"
+            android:gravity="start"
+            android:textSize="@dimen/_15ssp"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:background="@drawable/layer_display_restaurants_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            style="@style/general_et_home"/>
+
+        <RadioGroup
+            android:id="@+id/fragment_general_contact_us_rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            >
+
+            <RadioButton
+                android:id="@+id/Contact_Us_Fragment_Rb_Complaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/purple"
+                android:drawablePadding="@dimen/_4sdp"
+                android:drawableStart="@drawable/selector_custom_contact_us_radio_btn"
+                android:button="@null"
+                android:background="@android:color/transparent"
+                android:text="@string/contact_us_r_btn_complaint"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+            <RadioButton
+                android:id="@+id/Contact_Us_Fragment_Rb_Suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Suggestion"
+                android:textSize="@dimen/_15ssp"
+                android:drawablePadding="@dimen/_4sdp"
+                android:drawableStart="@drawable/selector_custom_contact_us_radio_btn"
+                android:button="@null"
+                android:textColor="@color/purple"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+            <RadioButton
+                android:id="@+id/Contact_Us_Fragment_Rb_Enquiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enquiry"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/purple"
+                android:drawablePadding="@dimen/_4sdp"
+                android:drawableStart="@drawable/selector_custom_contact_us_radio_btn"
+                android:button="@null"
+                android:background="@android:color/transparent"
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/Contact_Us_Fragment_Btn_send"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxHeight="@dimen/_40sdp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            style="@style/activity_splash_btn"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

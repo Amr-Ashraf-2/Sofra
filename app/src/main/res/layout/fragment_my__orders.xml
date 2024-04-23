@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.client.homeCycle.My_Orders_Fragment">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/My_Orders_Fragment_TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:fillViewport="true"
+                app:tabIndicatorColor="@color/red"
+                app:tabIndicatorFullWidth="true"
+                app:tabIndicatorHeight="@dimen/_4sdp"
+                app:tabTextColor="@color/black">
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/My_Orders_Fragment_ViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/My_Orders_Fragment_TabLayout">
+
+            </android.support.v4.view.ViewPager>
+
+
+
+
+</RelativeLayout>

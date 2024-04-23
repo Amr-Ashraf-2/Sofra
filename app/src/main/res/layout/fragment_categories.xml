@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.restaurant.categories.CategoriesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/my_categories"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/Restaurant_Categories_Fragment_srl_Categories_list_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/Sfl_ShimmerFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:shimmer_duration="1000">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                        <include layout="@layout/item_restaurant_categories_shimmer" />
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Restaurant_Categories_Fragment_Rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_8sdp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Restaurant_Categories_Fragment_Fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_plus_solid" />
+
+    <TextView
+        android:id="@+id/Restaurant_Categories_Fragment_Tv_NoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="لا يوجد تصنيفات"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

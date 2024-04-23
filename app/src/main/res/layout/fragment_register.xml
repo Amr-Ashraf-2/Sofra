@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.authCycle.ClientRegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbackground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/Lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_12sdp">
+                    <ImageView
+                        android:id="@+id/Register_Fragment_Iv_AddImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_circle_grey"
+                        android:padding="@dimen/_18sdp"
+                        app:srcCompat="@drawable/ic_user_plus_solid">
+
+                    </ImageView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Register_Fragment_Iv_Profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Register_Fragment_TIE_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:backgroundTint="@color/greylight"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_user_regular"
+                    android:hint="@string/name"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Register_Fragment_TIE_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/greylight"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_envelope_square_solid"
+                    android:hint="@string/email"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Register_Fragment_TIE_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/greylight"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_phone_solid"
+                    android:hint="@string/phone"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/Register_Fragment_Ll_City"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            app:srcCompat="@drawable/ic_home_solid"
+                            tools:ignore="NestedWeights" />
+
+                        <Spinner
+                            android:id="@+id/Register_Fragment_Sp_City"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Register_Fragment_Ll_Region"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            app:srcCompat="@drawable/ic_home_solid"
+                            tools:ignore="NestedWeights" />
+
+                        <Spinner
+                            android:id="@+id/Register_Fragment_Sp_Region"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </Spinner>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/greylight" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Register_Fragment_TIE_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/greylight"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_lock_solid"
+                    android:hint="@string/address"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Register_Fragment_TIE_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/greylight"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_lock_solid"
+                    android:hint="@string/password"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Register_Fragment_TIE_PasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@color/greylight"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_lock_solid"
+                    android:hint="@string/password_confirm"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="UnusedAttribute" />
+
+                <RelativeLayout
+                    android:id="@+id/Register_Fragment_Rl_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_48sdp"
+                    android:layout_marginStart="@dimen/_48sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/button_backgrond_red_redius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            app:srcCompat="@drawable/ic_sign_in_alt_solid" />
+
+                        <TextView
+                            android:id="@+id/Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/register"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

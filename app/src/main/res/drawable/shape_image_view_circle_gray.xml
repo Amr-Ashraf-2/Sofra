@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/shape_image_view_circle_icon_client_shape">
+        <shape android:shape="oval">
+            <solid android:color="@color/gray"/>
+            <size android:width="@dimen/_35sdp"
+                android:height="@dimen/_35sdp"/>
+        </shape>
+    </item>
+
+    <item
+        android:id="@+id/shape_image_view_circle_icon_client_drawable"
+        android:drawable="@drawable/ic_add_user_img_icon"
+        android:gravity="center"
+        android:top="@dimen/_60sdp"
+        android:bottom="@dimen/_60sdp"
+        android:left="@dimen/_60sdp"
+        android:right="@dimen/_60sdp"
+        />
+
+</layer-list>

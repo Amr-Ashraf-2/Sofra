@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_95sdp">
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/Cart_Items_Item_Iv_Photo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:scaleType="centerCrop"
+        app:siShape="@drawable/shape_rounded_all_rectangle"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/Cart_Items_Item_Tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_toEndOf="@id/Cart_Items_Item_Iv_Photo"
+        android:text="تشيكن فرايز"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/Cart_Items_Item_Tv_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_toEndOf="@id/Cart_Items_Item_Tv_Name"
+        android:text="20 ريال"
+        android:textSize="@dimen/_10ssp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Cart_Items_Item_Tv_Name"
+        android:layout_toStartOf="@id/Cart_Items_Item_Tv_Delete"
+        android:layout_toEndOf="@id/Cart_Items_Item_Iv_Photo">
+
+        <TextView
+            android:id="@+id/Tv_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@string/quantity"
+            android:textSize="@dimen/_10ssp" />
+
+
+        <Button
+            android:id="@+id/Cart_Items_Item_Btn_Increase"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toEndOf="@id/Tv_Quantity"
+            android:background="@drawable/foodlist_item_background"
+            android:text="@string/Increase"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Cart_Items_Item_tV_Quantity_Show"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toEndOf="@id/Cart_Items_Item_Btn_Increase"
+            android:background="@drawable/foodlist_item_background"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Cart_Items_Item_Btn_Decrease"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toEndOf="@id/Cart_Items_Item_tV_Quantity_Show"
+            android:background="@drawable/foodlist_item_background"
+            android:text="@string/Decrease"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Cart_Items_Item_Tv_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:background="@drawable/circle_red_small"
+        android:gravity="center"
+        android:text="x"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

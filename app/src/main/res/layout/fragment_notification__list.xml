@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    tools:context=".ui.fragments.Notification_List_Fragment">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Notification_List_Fragment_srl_notification_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/Sfl_ShimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_duration="1000"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                    <include layout="@layout/item_notifications_list_shimmer" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Notification_List_Fragment_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_notifications_list"
+                android:layout_marginTop="@dimen/_8sdp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/Notification_List_Fragment_Tv_No_Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_notifications"
+        android:textColor="@color/reddark"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

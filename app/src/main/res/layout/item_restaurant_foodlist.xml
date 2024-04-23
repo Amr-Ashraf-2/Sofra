@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp">
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/Item_Restaurant_FoodList_Iv_ProductPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:siShape="@drawable/shape_rounded_top_rectangle" />
+
+    <TextView
+        android:id="@+id/Item_Restaurant_FoodList_Tv_SpecialOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:background="@drawable/blue_black_background"
+        android:gravity="center"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:text="@string/special_offer"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Item_Restaurant_FoodList_Tv_SpecialOrder"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="-6dp"
+        android:background="@drawable/special_background"
+        android:gravity="center"
+        android:text="@string/special_order"
+        android:textColor="@color/grey"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_95sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:background="@drawable/foodlist_item_background">
+
+        <TextView
+            android:id="@+id/Item_Restaurant_FoodList_Tv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textColor="@color/dark_pink"
+            android:textSize="@dimen/_15ssp"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/Item_Restaurant_FoodList_Tv_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_minus3sdp"
+            android:layout_below="@id/Item_Restaurant_FoodList_Tv_Name"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textColor="@color/fragment_forgot_password_et_hint"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="top"
+            />
+
+        <TextView
+            android:id="@+id/Item_Restaurant_FoodList_Tv_PriceWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Item_Restaurant_FoodList_Tv_Description"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textColor="@color/item_custom_restaurant_item_tv_price"
+            android:text="@string/price_word"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/Item_Restaurant_FoodList_Rl_Price"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_below="@id/Item_Restaurant_FoodList_Tv_Description"
+            android:layout_toEndOf="@id/Item_Restaurant_FoodList_Tv_PriceWord">
+
+            <TextView
+                android:id="@+id/Item_Restaurant_FoodList_Tv_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:textColor="@color/item_custom_restaurant_item_tv_price"
+                android:textSize="@dimen/_13ssp" />
+
+            <ImageView
+                android:id="@+id/Item_Restaurant_FoodList_Iv_OfferPrice"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@color/red"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Item_Restaurant_FoodList_Tv_OfferPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Item_Restaurant_FoodList_Tv_Description"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toEndOf="@+id/Item_Restaurant_FoodList_Rl_Price"
+            android:textColor="@color/item_custom_restaurant_item_tv_price"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/Item_Restaurant_FoodList_Iv_Favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@color/red"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp" />
+    </RelativeLayout>
+</RelativeLayout>

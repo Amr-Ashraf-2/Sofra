@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingStart="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_12sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingBottom="@dimen/_4sdp">
+
+    <TextView
+        android:id="@+id/customToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تم تسجيل الدخول"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_12ssp"
+        />
+
+    <ImageView
+        android:id="@+id/customToast_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_8sdp"
+        />
+
+
+</LinearLayout>

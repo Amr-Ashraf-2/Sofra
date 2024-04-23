@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments.client.restaurantDetails.CommentsAndRating_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/CommentsAndRating_Fragment_Tv_Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/pleasure_your_partener"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:textColor="@color/item_custom_restaurant_item_tv_price"/>
+
+        <Button
+            android:id="@+id/CommentsAndRating_Fragment_Btn_Add_Comment"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/CommentsAndRating_Fragment_Tv_Comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_52sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_52sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_button_rounded_pink"
+            android:gravity="center"
+            android:maxHeight="@dimen/_40sdp"
+            android:text="@string/add_comment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/fragment_restaurant_reviews_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_below="@+id/rel"
+        android:background="@color/fragment_login_ll_register" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Current_Orders_Fragment_Srl_CommentsAndRating_Refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@id/fragment_restaurant_reviews_view_line">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/Sfl_ShimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_duration="1000">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                    <include layout="@layout/item_comments_shimmer" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/CommentsAndRating_Fragment_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_comments"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/CommentsAndRating_Fragment_Tv_NoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

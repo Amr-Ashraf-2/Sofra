@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d1cfd0</color>
+    <color name="colorPrimaryDark">#F5F5F5</color>
+<!--    <color name="colorPrimaryDark">#d1cfd0</color>-->
+    <color name="colorAccent">#CE0D2D</color>
+<!--    <color name="colorAccent">#FF4081 default</color>-->
+<!--    <color name="colorAccent">#FF4057 </color>-->
+    <color name="blue_black">#05051e</color>
+
+    <color name="reddark">#6c0c2c</color>
+    <color name="greydark">#acaaab</color>
+
+    <color name="grey">#d1cfd0</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000000</color>
+    <color name="blackLight">#1b1b1b</color>
+
+    <color name="greylight">#e7e5e6</color>
+    <color name="green">#218921</color>
+    <color name="red">#de1b1e</color>
+    <color name="whitelight">#f9f6f6</color>
+    <color name="lightblue">#206bc6</color>
+
+    <color name="light_gray">#F8F8F8</color>
+    <color name="light_gray2">#E5E5E5</color>
+    <!--    fragment_forgot_password   -->
+    <color name="fragment_forgot_password_et_hint">#B5B5B5</color>
+
+    <color name="pink">#FF4057</color>
+    <color name="dark_pink">#CE0D2D</color>
+    <color name="item_custom_restaurant_item_tv_price">#352347</color>
+    <color name="fragment_login_ll_register">#D5CDCB</color>
+    <color name="purple">#352347</color>
+    <color name="gray">#E5E5E5</color>
+    <color name="spinner_bg">#E6B2BA</color>
+    <color name="light_purple">#483C52</color>
+    <color name="dark_gray">#898989</color>
+
+</resources>

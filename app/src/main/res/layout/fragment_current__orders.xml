@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.client.my_orders.OrdersFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Current_Orders_Fragment_Srl_Orders_List_Refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/Sfl_ShimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_duration="1000">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+                    <include layout="@layout/item_client_orders_shimmer"/>
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Current_Orders_Fragment_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/Current_Orders_Fragment_Tv_No_Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_orders"
+        android:textColor="@color/reddark"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

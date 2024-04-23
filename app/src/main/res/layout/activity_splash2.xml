@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray2"
+    tools:context=".ui.activities.cycles.SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/cropplant"
+        android:layout_marginBottom="@dimen/_minus5sdp"/>
+
+    <ImageView
+        android:id="@+id/Splash2_Activity_Iv_Logo"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/Splash2_Activity_Btn_FoodOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Splash2_Activity_Iv_Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/button_backgrond_red"
+        android:text="@string/request_food"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_15ssp" />
+
+    <Button
+        android:id="@+id/Splash2_Activity_Btn_FoodSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Splash2_Activity_Btn_FoodOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/button_backgrond_red"
+        android:text="@string/sell_food"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_15ssp" />
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/plantt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_minus5sdp"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_45sdp"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_marginStart="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:id="@+id/gfg"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/ic_circle_outline"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Item_Categories_Iv_Photo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/shape_shimmer2"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Item_Categories_Tv_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gfg"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        android:background="@drawable/shape_shimmer1"
+        android:textColor="@color/fragment_forgot_password_et_hint"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:background="@drawable/foodlist_item_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/Icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/ic_circle_grey"
+                />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:background="@drawable/item_backgrond_greydark3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/TimeIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_circle_grey"
+                />
+
+            <TextView
+                android:id="@+id/TimeAgo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:textColor="@color/light_purple"
+                android:textSize="@dimen/_8ssp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/item_backgrond_greydark3"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

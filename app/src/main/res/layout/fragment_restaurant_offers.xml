@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments.restaurant.offers.RestaurantOffersFragment">
+
+    <TextView
+        android:id="@+id/Tv_RestaurantNewOffers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/new_offers"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Restaurant_Offers_Fragment_srl_ofers_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Restaurant_Offers_Fragment_Btn_Add"
+        android:layout_below="@id/Tv_RestaurantNewOffers">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Restaurant_Offers_Fragment_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/Sfl_ShimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_duration="1000">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                    <include layout="@layout/item_restaurants_offers_shimmer" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <Button
+        android:id="@+id/Restaurant_Offers_Fragment_Btn_Add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_52sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_52sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/button_backgrond_red"
+        android:gravity="center"
+        android:text="@string/add_new_offer"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/Tv_NoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/no_offers"
+        android:textColor="@color/reddark"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

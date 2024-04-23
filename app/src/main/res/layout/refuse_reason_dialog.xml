@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Add_Comment_Dialog_Relative"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@drawable/grey_background_2">
+
+    <TextView
+        android:id="@+id/Tv_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/refuse_reson"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Dialog_RefuseReason_Et_RefuseReason"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Dialog_RefuseReason_Btn_Refuse"
+        android:layout_below="@id/Tv_reason"
+        android:layout_margin="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/white_background_2"
+        android:gravity="top"
+        android:hint="@string/add_reson_here"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:textSize="@dimen/_10ssp" />
+
+
+    <Button
+        android:id="@+id/Dialog_RefuseReason_Btn_Refuse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/button_backgrond_red_redius"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+
+</RelativeLayout>

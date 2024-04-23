@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.cycles.Navigation_Activity">
+
+    <RelativeLayout
+        android:id="@+id/Home_Cycle_Activity_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_bell_regular" />
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_back_arrow"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_Cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_calculator_solid"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toEndOf="@+id/Home_Cycle_Activity_Iv_Back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/Home_Cycle_Activity_Tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Home_Cycle_Activity_Iv_Cart"
+            android:layout_toStartOf="@+id/Home_Cycle_Activity_Iv_Notification"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_15ssp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/Home_Cycle_Activity_FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Home_Cycle_Activity_Ll_Bottom_Navigation"
+        android:layout_below="@id/Home_Cycle_Activity_Toolbar">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/Home_Cycle_Activity_Ll_Bottom_Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/navigation_background">
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_More"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/_4sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_ellipsis_h_solid" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_Profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/_4sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_user_regular" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:background="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_FoodList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_clipboard_list_solid_white" />
+
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/Home_Cycle_Activity_Iv_Home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_4sdp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_home_solid" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

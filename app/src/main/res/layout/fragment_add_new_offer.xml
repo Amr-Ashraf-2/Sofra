@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.restaurant.offers.AddNewOfferFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/Restaurant_Add_New_Offer_Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/add_offer_image"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/Restaurant_Add_New_Offer_Iv_Choose"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/item_backgrond_greydark"
+                    android:padding="@dimen/_16sdp"
+                    android:src="@drawable/ic_images_regular"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/Restaurant_Add_New_Offer_Iv_ProductPhoto"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    app:siShape="@drawable/shape_rounded_all_rectangle"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/Restaurant_Add_New_Offer_Et_Offer_Name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/offer_name"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColorHint="@color/greydark"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/Restaurant_Add_New_Offer_Et_Offer_Description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/edit_text_background"
+                android:gravity="top"
+                android:hint="@string/brief_description"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColorHint="@color/greydark"
+                android:textSize="@dimen/_12ssp" />
+
+            <EditText
+                android:id="@+id/Restaurant_Add_New_Offer_Et_Price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                android:hint="@string/price"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:inputType="number"
+                android:textColorHint="@color/greydark"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Restaurant_Add_New_Offer_Tv_From"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_28sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_background"
+                    android:drawableEnd="@drawable/ic_calendar_alt_regular"
+                    android:gravity="center_vertical"
+                    android:hint="@string/from"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textColor="@color/blackLight" />
+
+                <TextView
+                    android:id="@+id/Restaurant_Add_New_Offer_Tv_To"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_28sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_background"
+                    android:drawableEnd="@drawable/ic_calendar_alt_regular"
+                    android:gravity="center_vertical"
+                    android:hint="@string/to"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textColor="@color/blackLight" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/Restaurant_Add_New_Offer_Btn_Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_52sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_52sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/button_backgrond_red_redius"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

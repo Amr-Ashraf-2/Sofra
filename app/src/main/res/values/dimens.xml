@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <dimen name="_4sdp">1dp</dimen>-->
+<!--    <dimen name="_4sdp">2dp</dimen>-->
+<!--    <dimen name="_4sdp">4dp</dimen>-->
+<!--    <dimen name="_8sdp">8dp</dimen>-->
+<!--    <dimen name="_12sdp">16dp</dimen>-->
+<!--    <dimen name="_18sdp">24dp</dimen>-->
+<!--    <dimen name="_20sdp">32dp</dimen>-->
+<!--    <dimen name="_28sdp">40dp</dimen>-->
+<!--    <dimen name="_40sdp">48dp</dimen>-->
+<!--    <dimen name="_48sdp">56dp</dimen>-->
+<!--    <dimen name="_52sdp">64dp</dimen>-->
+<!--    <dimen name="_60sdp">72dp</dimen>-->
+<!--    <dimen name="_70sdp">80dp</dimen>-->
+<!--    <dimen name="dim_9xl">88dp</dimen>-->
+<!--    <dimen name="dim_10xl">96dp</dimen>-->
+<!--    <dimen name="dim_11xl">104dp</dimen>-->
+<!--    <dimen name="_95sdp">112dp</dimen>-->
+<!--    <dimen name="_100sdp">120dp</dimen>-->
+
+<!--    <dimen name="dim_16xl">120dp</dimen>-->
+<!--    <dimen name="dim_17xl">128dp</dimen>-->
+<!--    <dimen name="dim_18xl">136dp</dimen>-->
+<!--    <dimen name="dim_19xl">144dp</dimen>-->
+<!--    <dimen name="dim_20xl">154dp</dimen>-->
+<!--    <dimen name="dim_21xl">162dp</dimen>-->
+<!--    <dimen name="dim_22xl">170dp</dimen>-->
+
+<!--    <dimen name="_10ssps">8sp</dimen>-->
+<!--    <dimen name="_10ssp">10sp</dimen>-->
+<!--    <dimen name="_10sspss">11sp</dimen>-->
+<!--    <dimen name="_10ssp">12sp</dimen>-->
+<!--    <dimen name="_10ssp">14sp</dimen>-->
+
+<!--    <dimen name="_12ssp">16sp</dimen>-->
+<!--    <dimen name="_12ssp">18sp</dimen>-->
+
+<!--    <dimen name="_15ssp">20sp</dimen>-->
+<!--    <dimen name="_15sspl">22sp</dimen>-->
+
+<!--    <dimen name="_18ssp">24sp</dimen>-->
+<!--    <dimen name="_20ssp">28sp</dimen>-->
+<!--    <dimen name="txt_size_3xl">32sp</dimen>-->
+<!--    <dimen name="txt_size_4xl">36sp</dimen>-->
+<!--    <dimen name="txt_size_5xl">40sp</dimen>-->
+<!--    <dimen name="txt_size_6xl">44sp</dimen>-->
+<!--    <dimen name="dim_item">200dp</dimen>-->
+<!--    <dimen name="dim_halfitem">100dp</dimen>-->
+
+<!--    <dimen name="_4sdpplash">300dp</dimen>-->
+<!--    <dimen name="_12sdpogo_d">150dp</dimen>-->
+<!--    <dimen name="dim_b_n">10dp</dimen>-->
+<!--    <dimen name="dim_notification">6dp</dimen>-->
+<!--    <dimen name="dim_notification_h">24dp</dimen>-->
+<!--    <dimen name="_16sdp">20dp</dimen>-->
+<!--    <dimen name="_10sdp">13dp</dimen>-->
+<!--    <dimen name="dim_icone_reportes">30dp</dimen>-->
+<!--    &lt;!&ndash; Default screen margins, per the Android Design guidelines. &ndash;&gt;-->
+<!--    <dimen name="activity_horizontal_margin">16dp</dimen>-->
+<!--    <dimen name="activity_vertical_margin">16dp</dimen>-->
+<!--    <dimen name="dim_300">300dp</dimen>-->
+<!--    <dimen name="dim_50">50dp</dimen>-->
+
+</resources>

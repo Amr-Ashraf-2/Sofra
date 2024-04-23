@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.restaurant.applications.Applications_Fragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Restaurant_Applications_Fragment_srl_products_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/Sfl_ShimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_duration="1000">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+                    <include layout="@layout/item_applications_shimmer"/>
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Restaurant_Applications_Fragment_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/Restaurant_Applications_Fragment_Tv_NoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="لا يوجد طلبات"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

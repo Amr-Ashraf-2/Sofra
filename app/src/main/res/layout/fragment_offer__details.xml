@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.client.general.Offer_Details_Fragment"
+    android:background="@color/white">
+
+            <TextView
+                android:id="@+id/Offer_Details_Fragment_Tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/offer_details"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                />
+
+            <RelativeLayout
+                android:id="@+id/Offer_Details_Fragment_Rel_Details"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Offer_Details_Fragment_Tv_Title"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:background="@drawable/item_backgrond_grey"
+                android:layout_centerHorizontal="true"
+                >
+
+                <TextView
+                    android:id="@+id/Offer_Details_Fragment_Tv_Restaurant_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/dark_pink"
+                    android:textSize="@dimen/_20ssp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/Offer_Details_Fragment_Tv_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/Offer_Details_Fragment_Tv_Restaurant_Name"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/_20ssp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/Offer_Details_Fragment_Tv_Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Offer_Details_Fragment_Tv_Name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/purple"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+                <GridLayout
+                    android:id="@+id/Offer_Details_Fragment_gl_dates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_below="@id/Offer_Details_Fragment_Tv_Description"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:textSize="@dimen/_12ssp"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/client_offers_tv_from"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/Offer_Details_Fragment_Tv_From"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:layout_gravity="end|top"
+                        android:textSize="@dimen/_12ssp"
+                        android:gravity="start"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:gravity="center"
+                        android:text="@string/client_offers_tv_to"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/Offer_Details_Fragment_Tv_To"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:gravity="start"
+                        android:textSize="@dimen/_12ssp" />
+
+                </GridLayout>
+
+                <Button
+                    android:id="@+id/Offer_Details_Fragment_Btn_GetIt"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Offer_Details_Fragment_gl_dates"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_backgrond_red_redius"
+                    android:text="@string/get_it_now"
+                    style="@style/activity_splash_btn"
+                     />
+
+            </RelativeLayout>
+
+</RelativeLayout>

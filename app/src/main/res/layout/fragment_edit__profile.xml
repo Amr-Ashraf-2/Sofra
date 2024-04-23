@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".ui.fragments.client.homeCycle.Edit_Client_Profile_Fragment"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingStart="@dimen/_15sdp"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Edit_Profile_Fragment_Civ_ProfilePicture"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/shape_image_view_circle_gray"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit_text_rounded_gray"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_11sdp"
+        android:paddingBottom="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/fragment_client_profile_img_v_profile_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/ic_name_icon_purple"
+            style="@style/general_img_v_user_rl" />
+
+        <EditText
+            android:id="@+id/Edit_Profile_Fragment_Et_Name"                    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_toEndOf="@+id/fragment_client_profile_img_v_profile_icon"
+            style="@style/general_et_home"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit_text_rounded_gray"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_11sdp"
+        android:paddingBottom="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/fragment_client_profile_img_v_email"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/ic_email_icon_purple"
+            style="@style/general_img_v_user_rl" />
+
+        <EditText
+            android:id="@+id/Edit_Profile_Fragment_Et_Email"                    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_toEndOf="@+id/fragment_client_profile_img_v_email"
+            style="@style/general_et_home" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit_text_rounded_gray"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_11sdp"
+        android:paddingBottom="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/fragment_client_profile_img_v_phone"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/ic_phone_icon_purple"
+            style="@style/general_img_v_user_rl" />
+
+        <EditText
+            android:id="@+id/Edit_Profile_Fragment_Et_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_toEndOf="@+id/fragment_client_profile_img_v_phone"
+            style="@style/general_et_home" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_client_profile_rl_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:background="@drawable/shape_edit_text_rounded_gray"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+        <ImageView
+            android:id="@+id/Image_Home"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/ic_region_icon_purple"
+            style="@style/general_img_v_user_rl"
+            tools:ignore="VectorDrawableCompat"/>
+
+        <Spinner
+            android:id="@+id/Edit_Profile_Fragment_Sp_City"                    android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="@dimen/_17sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            style="@style/general_sp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_down_arrow_purple_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            tools:ignore="VectorDrawableCompat"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_client_profile_rl_region"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:background="@drawable/shape_edit_text_rounded_gray"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+        <ImageView
+            android:id="@+id/Image_Home2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_region_icon_purple"
+            style="@style/general_img_v_user_rl"
+            tools:ignore="VectorDrawableCompat"/>
+
+        <Spinner
+            android:id="@+id/Edit_Profile_Fragment_Sp_Region"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="@dimen/_17sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            style="@style/general_sp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_down_arrow_purple_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            tools:ignore="VectorDrawableCompat"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Edit_Profile_Fragment_Btn_Adjust"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button_backgrond_red_redius"
+        android:gravity="center"
+        android:text="@string/adjust"
+        style="@style/activity_splash_btn"/>
+
+</LinearLayout>

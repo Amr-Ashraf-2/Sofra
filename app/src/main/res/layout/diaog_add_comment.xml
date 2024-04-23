@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_background_3"
+    android:id="@+id/Add_Comment_Dialog_Relative">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/Tv_Choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/item_custom_add_restaurant_review_tv_text"        android:textColor="@color/item_custom_restaurant_item_tv_price"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/Emojs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:id="@+id/Dialog_Comments_Iv_Love"
+                android:src="@drawable/ic_in_love_regular"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:id="@+id/Dialog_Comments_Iv_Happy"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_laugh_beam_regular"
+                tools:ignore="VectorDrawableCompat"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/Dialog_Comments_Iv_Good"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_smile_regular"
+                tools:ignore="VectorDrawableCompat"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/Dialog_Comments_Iv_Sad"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_sad_regular"
+                tools:ignore="VectorDrawableCompat"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/Dialog_Comments_Iv_Angry"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_angry_regular"
+                tools:ignore="VectorDrawableCompat"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/white_background_3"
+            >
+
+            <EditText
+                android:id="@+id/Dialog_Comments_Et_AddComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_below="@id/Dialog_Comments_Iv_State"
+                android:hint="@string/add_your_comment_here"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textSize="@dimen/_12ssp"
+                android:lines="5"
+                android:paddingBottom="@dimen/_5sdp"
+                android:background="@null"
+                />
+
+            <ImageView
+                android:id="@+id/Dialog_Comments_Iv_State"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Dialog_Comments_Btn_Add"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_backgrond_red_redius"
+                android:text="@string/add_coment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_3sdp"
+                />
+
+
+            <Button
+                android:id="@+id/Dialog_Comments_Btn_Cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_backgrond_red_redius"
+                android:text="@string/cancel_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_3sdp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
